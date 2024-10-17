@@ -1,50 +1,66 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import './Timeline.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faDatabase, faBug } from "@fortawesome/free-solid-svg-icons";
+import gtriLogo from '../assets/gtri-logo.png';
+import iasLogo from '../assets/ias-logo.png';
+import csLogo from '../assets/cs-logo.png';
 
 const experiences = [
     {
-        date: "May 2024 - Present",
-        company: "Spectrum",
-        location: "(Denver, CO)",
-        position: "Platforms Engineer Intern",
-        icon: <FontAwesomeIcon icon={faCode} size="2x" />,
-        description: "Developed and maintained infrastructure for the Data Science team to run their machine learning workflows and deploy models with ease "
+        date: "August 2024 - Present",
+        company: "Center for Computational Relativity and Gravity",
+        location: "(Rochester, NY)",
+        position: "Machine Learning Research Assistant",
+        icon: <img src={csLogo} alt="CS Logo" className="icon-image"/>, 
+        color: "#ADD8E6",       
+        description: "Currently working with Prof. Weijie Zhao on optimizing machine unlearning on gradient boosted neural network models."
     },
     {
-        date: "Feb 2023 - Present",
-        company: "Boston Hacks",
-        location: "(Boston, MA)",
-        position: "Front-End Engineer / Organizer",
-        icon: <FontAwesomeIcon icon={faCode} size="2x" />,
-        description: "Spearheaded the development and continuous maintenance of BostonHacks’ hackathon website to deliver a seamless experience for a community of over 500 hackers."
+        date: "May 2024 - August 2024",
+        company: "Georgia Tech Research Institute",
+        location: "(Orlando, FL)",
+        position: "Software Engineer Intern",
+        color: "#B3A369",
+        icon: 
+        (
+        <div className="icon-container">
+            <img src={gtriLogo} alt="GTRI Logo" className="icon-image" />
+            <div 
+            className="icon-overlay" 
+            onClick={() => window.open("https://gtri.gatech.edu/", "_blank", "noopener, noreferrer")}
+            />
+        </div>
+        ),      
+        description: "Worked closesly with ASL researchers to developed software tools and optimizations for Firefly, ABE, and VECTS training safety systems. Notably, I worked on designing tools on the UH60 Black Hawk platform as well as threat table parsers for the US Army and DoD."
     },
     {
-        date: "Sept 2023 - Aug 2024",
-        company: "Quantly",
-        location: "(Boston, MA)",
-        position: "Lead Technical Developer",
-        icon: <FontAwesomeIcon icon={faCode} size="2x" />,
-        description: "Guided a cross-functional team consisting of 4 developers and 1 UX designer to successfully establish and develop a startup dedicated to providing college students with a platform to practice for quantitative analysis interviews."
+        date: "August 2024 - December 2024",
+        company: "Computational Biomedicine Lab",
+        location: "(Rochester, NY)",
+        position: "Data Science Research Assistant",
+        color: "#ADD8E6",
+        icon: <img src={csLogo} alt="CS Logo" className="icon-image"/>,        
+
+        description: "Collaborated on a capstone paper research the correlation between substance usage and domestic abuse with Deep Forest, Random Forest, and Gradient Boosted model"
     },
     {
-        date: "May 2023 - Aug 2023",
-        company: "Amica Mutual Insurance",
-        location: "(Lincoln, RI)",
-        position: "Student QA Developer",
-        icon: <FontAwesomeIcon icon={faBug} size="2x" />,
-        description: "  Developed and integrated automated testing within Amica’s Quality Assurance framework using Selenium and TestNG, resulting in a 30% reduction in manual testing and enhancing testing efficiency."
+        date: "June 2024 - August 2024",
+        company: "Integral Ad Science",
+        location: "(New York, NY)",
+        position: "Data Engineer Intern",
+        "color" : "#39FF14",
+        icon:
+        (
+        <div className="icon-container">
+            <img src={iasLogo} alt="IAS Logo" className="icon-image" />
+            <div 
+            className="icon-overlay" 
+            onClick={() => window.open("https://integralads.com/", "_blank", "noopener, noreferrer")}
+            />
+        </div>
+        ),       
+        description: "Worked with the walled gradens team to design solutions to improve data quality. On the 10 weeks internship, I developed a containarized application for automated anomaly detection and constructed new DAG in EC2 AirFlow instance for alerts on trends and irregularities."
     },
-    {
-        date: "Jun 2022 - Aug 2022",
-        company: "Youth4AM",
-        location: "(Remote)",
-        position: "Database Intern",
-        icon: <FontAwesomeIcon icon={faDatabase} size="2x" />,
-        description: "Pioneered the development of a comprehensive full-stack application that empowered 100+ teaching assistants to efficiently evaluate and manage a diverse cohort of 100+ students."
-    }
 ]
 
 const Timeline = () => {
@@ -58,8 +74,9 @@ const Timeline = () => {
                     contentStyle={{ background: "rgb(0,0,0,0.5)", color: "#ffffff", backdropFilter: "blur(5px)"}}
                     dateClassName="date"
                     icon={experience.icon}
-                >
-                    <h3 className="vertical-timeline-element-title">{experience.company + " - " + experience.position}</h3>
+                    iconClassName="timeline-icon">
+                    <h3 className="vertical-timeline-element-title" style={{color : experience.color}}>{experience.company + "\n" }</h3>
+                    <h4>{experience.position} </h4>
                     <p>{experience.description}</p>
                 </VerticalTimelineElement>
             ))}

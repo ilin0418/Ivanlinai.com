@@ -5,7 +5,7 @@ const particlesConfig = {
               value: '#000000',
             },
           },
-          fpsLimit: 120,
+          fpsLimit: 144,
           interactivity: {
             detectsOn: 'window',
             events: {
@@ -23,17 +23,17 @@ const particlesConfig = {
           },
           particles: {
             color: {
-              value: "#F5EEF8",
+              value: "#4889b8",
             },
             links: {
               enable: true,
               width: 1,
               opacity: 1,
               distance: 150,
-              color: '#b1ddf1',
+              color: '#CCCCFF',
               triangles: {
                 enable: true,
-                color: '#b1ddf1',
+                color: '#5D3FD3',
                 opacity: 0.2,
               },
             },
@@ -42,7 +42,7 @@ const particlesConfig = {
               direction: 'none',
               outModes: 'bounce',
               random: true,
-              speed: 5,
+              speed: 4,
               straight: false
             },
             number: {
@@ -57,7 +57,7 @@ const particlesConfig = {
             value: 0.9,
           },
           shape: {
-            type: 'triangle'
+            type: 'hexagon'
           },
           size: {
             random: true,

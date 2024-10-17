@@ -1,10 +1,12 @@
-.contact {
+.contact 
+{
     display: flex;
     color: aliceblue;
     justify-content: space-between;
 }
 
-.contact-info{
+.contact-info
+{
     width: 300px;
 }
 
@@ -15,28 +17,33 @@
     text-decoration-thickness: 1px;
 }
 
-.contact-info ul {
+.contact-info ul 
+{
     list-style: none;
 }
 
-.contact-info ul li {
+.contact-info ul li
+{
     margin: 25px auto;
 }
 
-.contact-info ul li a{
+.contact-info ul li a
+{
     color: aliceblue;
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    .contact {
+@media screen and (max-width: 768px)
+{
+    .contact 
+    {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .contact-info {
-        margin: 0 auto;
+    .contact-info 
+    {
+    margin: 0 auto;
     }
 }
-    

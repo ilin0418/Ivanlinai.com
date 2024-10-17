@@ -1,15 +1,4 @@
 import './About.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faPython, 
-  faHtml5, 
-  faReact, 
-  faGit, 
-  faPhp,
-  faCss3Alt,
-  faLinux,
-  faJava,
-  faJsSquare, } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
 
 export default function About() {
@@ -29,23 +18,23 @@ export default function About() {
         <div className='description'>
           <h1>About Me</h1>
           <p>
-            Hello, and welcome to my React portfolio website! My name is Rong Chen, and I am a passionate web developer with a strong background in React and other front-end technologies.
-            I love building beautiful and responsive web applications that not only look great but also provide seamless user experiences. I am always looking for ways to improve my skills and stay up-to-date with the latest trends and best practices in web development.
-            Aside from coding, I enjoy traveling, weight lifting, and playing basketball.
+            Hello there! My name is Ivan Lin and I am a passionate software engineer with a strong interest in backend development. I love working on projects that involve data, ML, and distributed systems.
+            I love working on dynamic and challenging projects that have high impact. 
+            I am always looking for ways to challenge myself, improve my skills, and stay up-to-date with the latest trends in emerging technologies.
+            Aside from coding, I enjoy golfing, reading books, and cooking.
           </p>
         </div>
         <div className='skills'>
-          <h1>Skills</h1>
+          <h1>Programming Languages</h1>
           <ul>
-            <li><FontAwesomeIcon icon={faReact} beat size='2xl'/></li>
-            <li><FontAwesomeIcon icon={faHtml5} beat size='2xl'/></li>
-            <li><FontAwesomeIcon icon={faCss3Alt} beat size="2xl"/></li>
-            <li><FontAwesomeIcon icon={faJsSquare} beat size="2xl"/></li>
-            <li><FontAwesomeIcon icon={faPython} beat size='2xl'/></li>
-            <li><FontAwesomeIcon icon={faJava} beat size="2xl" /></li>
-            <li><FontAwesomeIcon icon={faGit} beat size="2xl" /></li>
-            <li><FontAwesomeIcon icon={faPhp} beat size="2xl" /></li>
-            <li><FontAwesomeIcon icon={faLinux} beat size="2xl" /></li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height={50} width={50}/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/julia/julia-original.svg" height={50} width={50}/>
           </ul>
         </div>
       </div>
