@@ -29,7 +29,7 @@ export default function Home() {
         <h2>I'm a <span className='typewriter'><Typewriter options={whoConfig}/></span></h2>
         <ul>
           <li> based in New York, NY USA</li>
-          <li> 🎓 4th Year student at RIT</li>
+          <li> 💫 4th Year student at RIT</li>
           <li> 📧 il9082@rit.edu</li>
         </ul>
         <div className='socials'>
