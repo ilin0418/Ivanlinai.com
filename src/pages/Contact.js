@@ -11,7 +11,7 @@ export default function Contact() {
           <ul>
             <li><a href='https://www.linkedin.com/in/ivanlin0418/'>🔗 Linkedin </a></li>
             <li><a href='https://github.com/ivanlin0418' target='blank'>🔗 Github </a></li>
-            <li><a href='https://www.instagram.com/derpy_rong/' target='blank'>🔗 Instagram </a></li>
+            <li><a href='https://www.reddit.com/user/Vibrantluster/' target='blank'>🔗 Reddit </a></li>
             <li><a href='mailto:il9082@rit.edu'>📧 il9082@rit.edu</a></li>
             <li>📍 20 Lomb Memorial Dr<br/>Rochster, NY 14623</li>
           </ul>

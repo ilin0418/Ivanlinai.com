@@ -1,7 +1,7 @@
 import './App.css';
 import AppRoutes from './AppRoutes';
 import Background from './components/Background';
-
+import 'react-tooltip/dist/react-tooltip.css';
 
 function App() {
   return (

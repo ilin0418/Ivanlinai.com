@@ -4,6 +4,8 @@ import './Timeline.css'
 import gtriLogo from '../assets/gtri-logo.png';
 import iasLogo from '../assets/ias-logo.png';
 import csLogo from '../assets/cs-logo.png';
+import { Tooltip } from 'react-tooltip';
+
 
 const experiences = [
     {
@@ -21,16 +23,16 @@ const experiences = [
         location: "(Orlando, FL)",
         position: "Software Engineer Intern",
         color: "#B3A369",
-        icon: 
-        (
-        <div className="icon-container">
-            <img src={gtriLogo} alt="GTRI Logo" className="icon-image" />
-            <div 
-            className="icon-overlay" 
-            onClick={() => window.open("https://gtri.gatech.edu/", "_blank", "noopener, noreferrer")}
-            />
-        </div>
-        ),      
+        icon: (
+            <div className="icon-container">
+                <a href="https://gtri.gatech.edu/" target="_blank" rel="noopener noreferrer">
+                    <img src={gtriLogo} alt="GTRI Logo" className="icon-image" data-tooltip-id="gtri-tooltip"/>
+                </a>
+                <Tooltip id="gtri-tooltip" place="top">
+                    To Matt LeBlanc and Campbell, you guys are awesome :D!
+                </Tooltip>
+            </div>
+        ),    
         description: "Worked closesly with ASL researchers to developed software tools and optimizations for Firefly, ABE, and VECTS training safety systems. Notably, I worked on designing tools on the UH60 Black Hawk platform as well as threat table parsers for the US Army and DoD."
     },
     {
@@ -73,7 +75,11 @@ const Timeline = () => {
                     iconStyle={{ background: "#FAF9F6", color: "#000" }}
                     contentStyle={{ background: "rgb(0,0,0,0.5)", color: "#ffffff", backdropFilter: "blur(5px)"}}
                     dateClassName="date"
-                    icon={experience.icon}
+                    icon={
+                        <div data-tip={experience.company} className="icon-container">
+                            {experience.icon}
+                        </div>
+                    }
                     iconClassName="timeline-icon">
                     <h3 className="vertical-timeline-element-title" style={{color : experience.color}}>{experience.company + "\n" }</h3>
                     <h4>{experience.position} </h4>

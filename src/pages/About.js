@@ -18,10 +18,10 @@ export default function About() {
         <div className='description'>
           <h1>About Me</h1>
           <p>
-            Hello there! My name is Ivan Lin and I am a passionate software engineer with a strong interest in backend development. I love working on projects that involve data, ML, and distributed systems.
+            Hello there! My name is Ivan Lin and I am a passionate software engineer with a strong interest in full-stack and backend development. I love working on projects that involve data, ML, and distributed systems.
             I love working on dynamic and challenging projects that have high impact. 
-            I am always looking for ways to challenge myself, improve my skills, and stay up-to-date with the latest trends in emerging technologies.
-            Aside from coding, I enjoy golfing, reading books, and cooking.
+            I am always looking for ways to simplify tasks through automation, challenge myself, and stay up-to-date with the latest trends in emerging technologies.
+            Aside from coding, I enjoy golfing, driving my car, reading news articles, and cooking.
           </p>
         </div>
         <div className='skills'>

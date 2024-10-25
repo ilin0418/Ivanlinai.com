@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
+    "react-tooltip": "^5.28.0",
     "react-tsparticles": "^2.9.3",
     "react-vertical-timeline-component": "^3.6.0",
     "tsparticles": "^2.9.3",
@@ -28,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts start"  
+    "dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [

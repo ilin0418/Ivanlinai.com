@@ -12,7 +12,7 @@
 
 .project-section h1 {
     text-align: center;
-    color: aliceblue;
+    color: azure;
 }
 
 .grid-container{
@@ -33,20 +33,25 @@
 }
 .grid-item img{
     object-fit: cover;
-    width: 150px;
+    width: 200px; /* Increased width for larger images */
     max-height: auto;
     border-radius: 10px;
+    margin-bottom: 10px; /* Adds space below the image */
 }
 
 .grid-item h1{
     margin: auto;
-    color: aliceblue;
+    color: azure;
     margin-bottom: 10px;
 }
 
 .grid-item p {
-    width: 500px;
-    color: aliceblue;
+    width: 500px; 
+    color: azure;
+    text-align: center; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    line-height: 1.5; 
 }
 
 @media screen and (max-width: 1200px) {
@@ -55,5 +60,11 @@
     }
     .project-section.show .grid-item p {
         width: 100%;
-    }
+    }   
 }   
+
+h4{
+    margin: auto;
+    color: lightcyan;
+    margin-bottom: 10px;
+}
