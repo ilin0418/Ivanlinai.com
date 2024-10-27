@@ -24,7 +24,7 @@
 }
 
 .grid-container .grid-item{
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.57);
     border-radius: 10px;
     padding: 40px;
     text-align: center;
@@ -33,10 +33,10 @@
 }
 .grid-item img{
     object-fit: cover;
-    width: 200px; /* Increased width for larger images */
+    width: 200px;  
     max-height: auto;
     border-radius: 10px;
-    margin-bottom: 10px; /* Adds space below the image */
+    margin-bottom: 10px; 
 }
 
 .grid-item h1{

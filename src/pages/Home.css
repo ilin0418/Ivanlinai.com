@@ -17,6 +17,7 @@
 
 .content img{
     border-radius: 50%;
+    width: 350px;
     padding: 16px;
     background-color: rgba(0, 0, 0, 0.5s);
     backdrop-filter: blur(3px);

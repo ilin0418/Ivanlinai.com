@@ -5,7 +5,7 @@ import gtriLogo from '../assets/gtri-logo.png';
 import iasLogo from '../assets/ias-logo.png';
 import csLogo from '../assets/cs-logo.png';
 import { Tooltip } from 'react-tooltip';
-
+import { getTechnologyIcon } from '../hooks/getIconElement'; 
 
 const experiences = [
     {
@@ -15,7 +15,8 @@ const experiences = [
         position: "Machine Learning Research Assistant",
         icon: <img src={csLogo} alt="CS Logo" className="icon-image"/>, 
         color: "#ADD8E6",       
-        description: "Currently working with Prof. Weijie Zhao on optimizing machine unlearning on gradient boosted neural network models."
+        description: "Currently working with Prof. Weijie Zhao on optimizing machine unlearning on gradient boosted neural network models.",
+        technologies: ["Python", "PyTorch", "scikitlearn", "CUDA"]
     },
     {
         date: "May 2024 - August 2024",
@@ -33,7 +34,8 @@ const experiences = [
                 </Tooltip>
             </div>
         ),    
-        description: "Worked closesly with ASL researchers to developed software tools and optimizations for Firefly, ABE, and VECTS training safety systems. Notably, I worked on designing tools on the UH60 Black Hawk platform as well as threat table parsers for the US Army and DoD."
+        description: "Worked closesly with ASL researchers to developed software tools and optimizations for Firefly, ABE, and VECTS training safety systems. Notably, I worked on designing tools on the UH60 Black Hawk platform as well as threat table parsers for the US Army and DoD.",
+        technologies: ["C++", "Python", "C#", "WPF", ".NET", "WinForms"]
     },
     {
         date: "August 2024 - December 2024",
@@ -43,7 +45,8 @@ const experiences = [
         color: "#ADD8E6",
         icon: <img src={csLogo} alt="CS Logo" className="icon-image"/>,        
 
-        description: "Collaborated on a capstone paper research the correlation between substance usage and domestic abuse with Deep Forest, Random Forest, and Gradient Boosted model"
+        description: "Collaborated on a capstone paper research the correlation between substance usage and domestic abuse with Deep Forest, Random Forest, and Gradient Boosted model",
+        technologies: ["Python", "Pandas", "PyTorch", "scikitlearn"]
     },
     {
         date: "June 2024 - August 2024",
@@ -61,7 +64,8 @@ const experiences = [
             />
         </div>
         ),       
-        description: "Worked with the walled gradens team to design solutions to improve data quality. On the 10 weeks internship, I developed a containarized application for automated anomaly detection and constructed new DAG in EC2 AirFlow instance for alerts on trends and irregularities."
+        description: "Worked with the walled gradens team to design solutions to improve data quality. On the 10 weeks internship, I developed a containarized application for automated anomaly detection and constructed new DAG in EC2 AirFlow instance for alerts on trends and irregularities.",
+        technologies: ["Python", "Docker", "AirFlow", "AWS", "GCP", "Spark", "Snowflake", "Pandas", "Plotly", "Docker"]
     },
 ]
 
@@ -73,7 +77,7 @@ const Timeline = () => {
                     key={experience.company}
                     date={experience.date + " " + experience.location}
                     iconStyle={{ background: "#FAF9F6", color: "#000" }}
-                    contentStyle={{ background: "rgb(0,0,0,0.5)", color: "#ffffff", backdropFilter: "blur(5px)"}}
+                    contentStyle={{ background: "rgb(0,0,0,0.59)", color: "#ffffff", backdropFilter: "blur(5px)"}}
                     dateClassName="date"
                     icon={
                         <div data-tip={experience.company} className="icon-container">
@@ -84,6 +88,11 @@ const Timeline = () => {
                     <h3 className="vertical-timeline-element-title" style={{color : experience.color}}>{experience.company + "\n" }</h3>
                     <h4>{experience.position} </h4>
                     <p>{experience.description}</p>
+                    <div className="tech-icons">
+                        {experience.technologies.map((tech, index) => (
+                            <span key={index} style={{ padding: "5px" }}>{getTechnologyIcon(tech)}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
             ))}
         </VerticalTimeline>
