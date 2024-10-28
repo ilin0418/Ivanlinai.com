@@ -9,6 +9,7 @@ import costco from '../assets/costco-wholesale.png'
 import stm32 from '../assets/stm32.png'
 import homelytics from '../assets/homelytics.jpg'
 import weather from '../assets/weather.png'
+import ivanlinai from '../assets/ivanlinai.png'
 import yc from '../assets/yc.png'
 import { useEffect, useState } from 'react'
 import { getTechnologyIcon } from '../hooks/getIconElement'
@@ -38,15 +39,16 @@ const projects = [
   {
     title: "MIDIfy",
     image: stm32,
+    link: "https://github.com/Ivanlin0418/MIDIfy",
     description: "Developed a fully-functioning MIDI player (plays music) with a STM32 board and embedded programming with interrupts, DAC, and ADC",
     technologies: ["Embedded C"]
   },
   {
     title: "Ivanlinai.com",
-    image: "Blank",
-    link: "https://ivanlinai.com",
-    description: "Developed a fully-functioning MIDI player (plays music) with a STM32 board and embedded programming with interrupts, DAC, and ADC",
-    technologies: ["Embedded C"]
+    image: ivanlinai,
+    link: "https://github.com/Ivanlin0418/Ivanlinai.com.git",
+    description: "This website exact you are viewing right now, build fully with React and deployed with Firebase!",
+    technologies: ["React", "Firebase"]
   },
   {
     title: "Homelytics",

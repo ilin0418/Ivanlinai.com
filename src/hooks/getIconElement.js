@@ -44,6 +44,7 @@ const technologyIconMap = {
 'Keras': 'devicon:keras',
 'TensorFlow': 'devicon:tensorflow',
 'WinForms': 'devicon:grommet-icons:document-windows',
+'Firebase': 'devicon:firebase',
 };
 
 export default function getIconElement(technology) {
