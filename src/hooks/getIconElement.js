@@ -30,7 +30,7 @@ const technologyIconMap = {
 'Agile Scrum': 'devicon:agile',
 'UML': 'devicon:uml',
 'JavaFX': 'devicon:javafx',
-'scikitlearn': 'devicon:scikitlearn',
+'scikit-learn': 'devicon:scikitlearn',
 'C++': 'devicon:cplusplus',
 'C#': 'devicon:csharp',
 'WPF': 'fa6-brands:wpforms',

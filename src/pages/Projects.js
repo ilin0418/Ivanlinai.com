@@ -27,7 +27,7 @@ const projects = [
     link: "https://github.com/Ivanlin0418/UCI_Gradient_Boost_NN",
     image: nn,
     description: "Currently working on optimizing a gradient boosted neural network model based on a UC Irvine data set (83.7% accuracy so far).",
-    technologies: ["Python", "CUDA", "scikitlearn", "PyTorch"]
+    technologies: ["Python", "CUDA", "scikit-learn", "PyTorch"]
   },
   {
     title: "Wordle Together",
@@ -47,7 +47,7 @@ const projects = [
     title: "Ivanlinai.com",
     image: ivanlinai,
     link: "https://github.com/Ivanlin0418/Ivanlinai.com.git",
-    description: "This website exact you are viewing right now, build fully with React and deployed with Firebase!",
+    description: "This exact website you are viewing right now, fully built with React and deployed with Firebase!",
     technologies: ["React", "Firebase"]
   },
   {
@@ -55,7 +55,7 @@ const projects = [
     link: "https://github.com/Ivanlin0418/Homelytics",
     image: homelytics,
     description: "Fullstack React-based application that webscrapes Trulia and uses statistics to find best value homes ",
-    technologies: ["React", "Python", "scikitlearn", "BeautifulSoup", "Uvicorn", "FastAPI", "Pandas", "M"]
+    technologies: ["React", "Python", "scikit-learn", "BeautifulSoup", "Uvicorn", "FastAPI", "Pandas", "Matplotlib"]
   },
   {
     title: "Costco Gas Price",

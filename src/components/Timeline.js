@@ -16,7 +16,7 @@ const experiences = [
         icon: <img src={csLogo} alt="CS Logo" className="icon-image"/>, 
         color: "#ADD8E6",       
         description: "Currently working with Prof. Weijie Zhao on optimizing machine unlearning on gradient boosted neural network models.",
-        technologies: ["Python", "PyTorch", "scikitlearn", "CUDA"]
+        technologies: ["Python", "PyTorch", "scikit-learn", "CUDA"]
     },
     {
         date: "May 2024 - August 2024",
@@ -46,7 +46,7 @@ const experiences = [
         icon: <img src={csLogo} alt="CS Logo" className="icon-image"/>,        
 
         description: "Collaborated on a capstone paper research the correlation between substance usage and domestic abuse with Deep Forest, Random Forest, and Gradient Boosted model",
-        technologies: ["Python", "Pandas", "PyTorch", "scikitlearn"]
+        technologies: ["Python", "Pandas", "PyTorch", "scikit-learn"]
     },
     {
         date: "June 2024 - August 2024",
@@ -65,7 +65,7 @@ const experiences = [
         </div>
         ),       
         description: "Worked with the walled gradens team to design solutions to improve data quality. On the 10 weeks internship, I developed a containarized application for automated anomaly detection and constructed new DAG in EC2 AirFlow instance for alerts on trends and irregularities.",
-        technologies: ["Python", "Docker", "AirFlow", "AWS", "GCP", "Spark", "Snowflake", "Pandas", "Plotly", "Docker"]
+        technologies: ["Python", "Docker", "AirFlow", "AWS", "GCP", "Spark", "Snowflake", "Pandas", "Plotly"]
     },
 ]
 
