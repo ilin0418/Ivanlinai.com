@@ -1,12 +1,11 @@
+import React, { useState, useEffect } from 'react';
 import './Home.css'
 import Typewriter from 'typewriter-effect';
 import whoConfig from '../config/whoConfig'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn, faReddit } from '@fortawesome/free-brands-svg-icons';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '@iconify/react';
 import resume from '../assets/Ivan_Lin_Resume.pdf'
-import { useState, useEffect } from 'react';
 import headshot from '../assets/golfing.png'
+
 
 export default function Home() {
   const [showComponent, setShowComponent] = useState(false);
@@ -29,22 +28,23 @@ export default function Home() {
         <h2>I'm a <span className='typewriter'><Typewriter options={whoConfig}/></span></h2>
         <ul>
           <li> based in New York, NY USA</li>
-          <li> 💫 4th Year student at RIT</li>
-          <li> 📧 il9082@rit.edu</li>
+          <li> 💻 4th Year student at RIT</li>
+          <li> 📧 ivanlin0418@gmail.com</li>
         </ul>
         <div className='socials'>
-          <a href={resume} target='_blank' rel='noreferrer'>
-          <FontAwesomeIcon icon={faFilePdf} size='2xl'/>
-          </a>
-          <a href='https://www.linkedin.com/in/ivanlin0418/' target='blank'>
-          <FontAwesomeIcon icon={faLinkedinIn} size='2xl'/>
-          </a>
-          <a href='https://github.com/ivanlin0418' target='blank'>
-          <FontAwesomeIcon icon={faGithub} size='2xl'/>
-          </a>
-          <a href='https://www.reddit.com/user/Vibrantluster/' target='blank'>
-          <FontAwesomeIcon icon={faReddit} size='2xl'/>
-          </a>
+        <a href={resume} target="_blank" rel="noopener noreferrer">
+          <Icon icon="mdi:resume" width="32" height="32" />
+        </a>
+        <a href='https://www.linkedin.com/in/ivanlin0418/' target="_blank" rel="noopener noreferrer">
+            <Icon icon="fa-brands:linkedin-in" width="32" height="32" />
+        </a>
+        <a href='https://github.com/ivanlin0418' target="_blank" rel="noopener noreferrer">
+            <Icon icon="fa-brands:github" width="32" height="32" />
+        </a>
+        <a href="https://leetcode.com/u/naXVI/" target="_blank" rel="noopener noreferrer">
+            <Icon icon="simple-icons:leetcode" width="32" height="32" />
+        </a>
+
         </div>
       </div>
     </div>

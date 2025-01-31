@@ -25,13 +25,13 @@
     backdrop-filter: blur(3px);
     width: 50%;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    overflow: hidden; /* Ensure carousel content is contained */
+    overflow: hidden; 
 }
 
 .about .description, .about .skills {
     padding: 30px;
     margin-bottom: 0;
-    text-align: center; /* Center text content */
+    text-align: center; 
 }
 
 .about ul {

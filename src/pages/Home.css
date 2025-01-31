@@ -70,20 +70,3 @@
     color: aliceblue;
 }
 
-@media screen and (max-width: 768px) {
-    .content.show {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0px 0px;
-    }
-
-    .content.show img{
-        margin: 0 auto;
-    }
-
-    .content.show .info {
-        margin: 20px 0px;
-    }
-}
-    

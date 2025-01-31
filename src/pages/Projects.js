@@ -1,11 +1,8 @@
 import './Projects.css'
 import minsweeper from '../assets/minesweeper.jpg'
-import nn from '../assets/gradientboosted-nn.png'
 import fitness from '../assets/fitness.jpg'
 import brickhack from '../assets/brickhack.jpg'
-import dining from '../assets/rit-dining.jpeg'
-import wordle from '../assets/wordle.png'
-import costco from '../assets/costco-wholesale.png'
+
 import stm32 from '../assets/stm32.png'
 import homelytics from '../assets/homelytics.jpg'
 import weather from '../assets/weather.png'
@@ -16,28 +13,14 @@ import { getTechnologyIcon } from '../hooks/getIconElement'
 
 const projects = [
   {
-    title: "YC Analyzer",
+    title: "YCombinatrix",
     link: "https://github.com/Ivanlin0418/YC_Analytics",
     image: yc,
     description: "Side-project application for insightful analysis of companies that have participated in the YCombinator accelerator program.",
     technologies: ["Python", "Pandas", "Kafka", "Docker", "Spark", "Plotly"]
   },
   {
-    title: "UCI Gradient Boosted Neural-Network Model <WIP>",
-    link: "https://github.com/Ivanlin0418/UCI_Gradient_Boost_NN",
-    image: nn,
-    description: "Currently working on optimizing a gradient boosted neural network model based on a UC Irvine data set (83.7% accuracy so far).",
-    technologies: ["Python", "CUDA", "scikit-learn", "PyTorch"]
-  },
-  {
-    title: "Wordle Together",
-    link: "https://github.com/Ivanlin0418/wordle-together",
-    image: wordle,
-    description: "Webapp built with Golang where 20+ users can play Wordle via a single TCP/IP connection",
-    technologies: ["Golang"]
-  },
-  {
-    title: "MIDIfy",
+    title: "Maestro",
     image: stm32,
     link: "https://github.com/Ivanlin0418/MIDIfy",
     description: "Developed a fully-functioning MIDI player (plays music) with a STM32 board and embedded programming with interrupts, DAC, and ADC",
@@ -51,35 +34,20 @@ const projects = [
     technologies: ["React", "Firebase"]
   },
   {
-    title: "Homelytics",
+    title: "BlackPebble",
     link: "https://github.com/Ivanlin0418/Homelytics",
     image: homelytics,
     description: "Fullstack React-based application that webscrapes Trulia and uses statistics to find best value homes ",
     technologies: ["React", "Python", "scikit-learn", "BeautifulSoup", "Uvicorn", "FastAPI", "Pandas", "Matplotlib"]
   },
   {
-    title: "Costco Gas Price",
-    link: "https://github.com/Ivanlin0418/costco-gas-price",
-    image: costco,
-    description: "Webscraping script that automates the process of locating the nearest Costco at a given zipcode and gets the current gas price",
-    technologies: ["Python", "Selenium"]
-  },
-  {
-    title: "RIT Visiting Chef Menu",
-    link: "https://github.com/Ivanlin0418/RIT-Visiting-Chef-Menu",
-    image: dining,
-    description: "Webscraping Script that fetches a list of chefs visiting RIT today, their location, and their availability",
-    technologies: ["Python", "BeautifulSoup", "Discord API"]
-  },
-  {
     title: "StyleSavings",
-    link: "https://github.com/Ivanlin0418/StyleSavings",
     image: brickhack,
     description: "Fullstack application for finding cheap clothing, built with Swift, Python, and PostgreSQL for database",
     technologies: ["Python", "BeautifulSoup", "Swift", "REST APIs", "PostgreSQL"]
   },
   {
-    title: "Fitness Flow",
+    title: "FitTrack",
     link: "https://github.com/Ivanlin0418/FitnessFlow",
     image: fitness,
     description: "Fullstack Angular application developed with Agile Scrum that allows users to sign up and purchase gym membership passes",

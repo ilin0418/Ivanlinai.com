@@ -65,7 +65,7 @@ const experiences = [
         </div>
         ),       
         description: "Worked with the walled gradens team to design solutions to improve data quality. On the 10 weeks internship, I developed a containarized application for automated anomaly detection and constructed new DAG in EC2 AirFlow instance for alerts on trends and irregularities.",
-        technologies: ["Python", "Docker", "AirFlow", "AWS", "GCP", "Spark", "Snowflake", "Pandas", "Plotly"]
+        technologies: ["Python", "AWS", "Docker", "AirFlow", "GCP", "Spark", "Snowflake", "Pandas", "Grafana"]
     },
 ]
 

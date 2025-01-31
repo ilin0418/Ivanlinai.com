@@ -37,7 +37,6 @@ const technologyIconMap = {
 'AirFlow': 'devicon:apacheairflow',
 'Plotly': 'devicon:plotly',
 'Snowflake': 'devicon:snowflake',
-'AWS': 'devicon:aws',
 'GCP': 'devicon:googlecloud',
 '.NET': 'devicon:dotnet',
 'Matplotlib': 'devicon:matplotlib',
@@ -45,6 +44,8 @@ const technologyIconMap = {
 'TensorFlow': 'devicon:tensorflow',
 'WinForms': 'devicon:grommet-icons:document-windows',
 'Firebase': 'devicon:firebase',
+'Grafana': 'devicon:grafana',
+'AWS': 'logos:aws',
 };
 
 export default function getIconElement(technology) {

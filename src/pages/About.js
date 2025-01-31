@@ -38,7 +38,7 @@ export default function About() {
             I've worked on fullstack web applications, data pipelines, low-level system programming, and machine learning models.
             I love working on dynamic and challenging projects that have high impact. Particulary, I am interested in projects that have involve distributed systems, cloud computing, ML and data analytics.
             I am always looking for ways to simplify tasks through automation, challenge myself, and stay up-to-date with the latest trends in emerging technologies.
-            Aside from coding, I enjoy golfing, driving my car, reading news articles, and cooking.         
+            Aside from coding, I enjoy golfing, 3D printing, driving my car, reading news articles, and cooking.         
           </h4>
         </div>
         <br>
