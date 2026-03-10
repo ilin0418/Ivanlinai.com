@@ -1,9 +1,9 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Experience() {
 
   return (
     <div className="max-w-2xl w-full">
@@ -15,37 +15,79 @@ export default function Home() {
             <Navbar />
           </div>
 
-          {/* Hero intro */}
-          <div className="flex flex-col justify-center" style={{ minHeight: "70vh", paddingBottom: "15vh" }}>
-          <div className="pb-10">
-            <h1 className="text-3xl font-bold pb-5" style={{ color: "#CCCCFF" }}>
-              Hi, Ivan Lin here
-            </h1>
-            <p className="max-w-lg leading-relaxed">
-              I&apos;m a software engineer based in New York City. I have
-              interests in{" "}
-              <span className="font-semibold">machine learning</span>,{" "}
-              <span className="font-semibold">full-stack development</span>, and{" "}
-              <span className="font-semibold">system design</span>. I graduated from the rochester institute of technology 
-              with a bachelors in software engineering. 
-
-          Outside of tech, I enjoy golfing, volunteering, and exploring
-          new coffee shops in the area!
-            </p>
-    
-          </div>
-
-          <br>
-          </br>
+          {/* Work */}
+          <div className="font-bold pt-10 pb-5 text-mypink">WORK</div>
 
           <p>
-            Feel free to connect with me.
+            systems development engineer intern at{" "} 
+            <a href="https://aws.amazon.com/" className="underline">
+              AWS
+            </a>
           </p>
-          <br>
-          </br>
+          <p className="text-mygray">summer 2025 - typescript, python, aws cdk</p>
+          <br />
+
+          <p>
+            software engineer intern at{" "}
+            <a href="https://www.gtri.gatech.edu/" className="underline">
+              GTRI
+            </a>
+          </p>
+          <p className="text-mygray">summer 2025 - python, c++, c#, .NET </p>
+          <br />
+
+          <p>
+            data engineer intern at{" "}
+            <a href="https://integralads.com/" className="underline">
+              IAS
+            </a>
+          </p>
+          <p className="text-mygray">
+            summer 2024 — python, snowflake, airflow, gcp, aws, grafana
+          </p>
+          <br />
+
+          
+
+          {/* Projects */}
+          <div className="font-bold pt-10 pb-5 text-mypink">PROJECTS</div>
+
+          <div className="flex justify-between items-center">
+            <p>bidiinet</p>
+            <div className="flex">
+            </div>
+          </div>
+          <p className="text-mygray">python, django, svelte, docker, figma, github actions</p>
+
+          <div className="flex justify-between items-center">
+            <p className="pt-5">black pebble</p>
+            <div className="flex">
+              <a href="#https://github.com/ilin0418/BlackPebble.git" className="hover:underline">github</a>
+            </div>
+          </div>
+          <p className="text-mygray">python, vite + react, fastapi, uvicorn, scikit-learn, pandas, docker, beautifulsoup, matplotlib
+ </p>
+
+          <div className="flex justify-between items-center">
+            <p className="pt-5">dealer360</p>
+            <div className="flex">
+              <a href="#" className="ml-4 mr-2 hover:underline">live</a>
+              <a href="#https://github.com/ilin0418/dealer360" className="hover:underline">github</a>
+            </div>
+          </div>
+          <p className="text-mygray">mongodb, express, react, node.js, google gemini api</p>
+
+         <div className="flex justify-between items-center">
+            <p className="pt-5">Sentiment Analytics</p>
+            <div className="flex">
+              <a href="https://github.com/ilin0418/AWS-Sentiment-Analytics" className="hover:underline">github</a>
+            </div>
+          </div>
+          <p className="text-mygray">terraform, aws (s3, lambda, dynamodb, api gateway, amplify, comprehend) </p>
+
 
           {/* Social icons */}
-          <ul className="pt-2 flex flex-row gap-5 pb-6">
+          <ul className="pt-10 flex flex-row gap-5 pb-6">
             <li>
               <a href="https://github.com/ilin0418" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} viewBox="0 0 24 24" fill="currentColor" className="hover:text-mypink transition-colors">
@@ -68,7 +110,6 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          </div>{/* end centering wrapper */}
         </div>
       </div>
     </div>
