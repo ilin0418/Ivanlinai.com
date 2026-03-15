@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 export default function Experience() {
 
   return (
-    <div className="max-w-2xl w-full">
+    <div className="max-w-2xl w-full min-h-screen flex flex-col">
       <div className="w-full">
         <div>
           {/* Header */}
@@ -78,7 +78,7 @@ export default function Experience() {
           <p className="text-mygray">mongodb, express, react, node.js, google gemini api</p>
 
          <div className="flex justify-between items-center">
-            <p className="pt-5">Sentiment Analytics</p>
+            <p className="pt-5">sentiment analytics</p>
             <div className="flex">
               <a href="https://github.com/ilin0418/AWS-Sentiment-Analytics" className="hover:underline">github</a>
             </div>
@@ -111,6 +111,9 @@ export default function Experience() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="mt-auto pt-8 pb-6">
+        <div className="h-1 w-full rounded-full bg-mypink/60" />
       </div>
     </div>
   );

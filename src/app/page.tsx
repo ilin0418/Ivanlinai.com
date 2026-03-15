@@ -19,18 +19,18 @@ export default function Home() {
           <div className="flex flex-col justify-center" style={{ minHeight: "70vh", paddingBottom: "15vh" }}>
           <div className="pb-10">
             <h1 className="text-3xl font-bold pb-5" style={{ color: "#CCCCFF" }}>
-              Hi, Ivan Lin here
+              Hi, Ivan here
             </h1>
             <p className="max-w-lg leading-relaxed">
               I&apos;m a software engineer based in New York City. I have
               interests in{" "}
               <span className="font-semibold">machine learning</span>,{" "}
               <span className="font-semibold">full-stack development</span>, and{" "}
-              <span className="font-semibold">system design</span>. I graduated from the rochester institute of technology 
+              <span className="font-semibold">system design</span>. I am an upcoming graduate from the RIT 
               with a bachelors in software engineering. 
 
-          Outside of tech, I enjoy golfing, volunteering, and exploring
-          new coffee shops in the area!
+              Outside of tech, I enjoy golfing, volunteering, and exploring
+              cat cafes in the area!
             </p>
     
           </div>
