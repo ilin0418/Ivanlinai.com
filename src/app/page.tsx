@@ -21,17 +21,15 @@ export default function Home() {
             <h1 className="text-3xl font-bold pb-5" style={{ color: "#CCCCFF" }}>
               Hi, Ivan here
             </h1>
-            <p className="max-w-lg leading-relaxed">
-              I&apos;m a software engineer based in New York City. I have
-              interests in{" "}
-              <span className="font-semibold">machine learning</span>,{" "}
-              <span className="font-semibold">full-stack development</span>, and{" "}
-              <span className="font-semibold">system design</span>. I am an upcoming graduate from the RIT 
-              with a bachelors in software engineering. 
-
-              Outside of tech, I enjoy golfing, volunteering, and exploring
-              cat cafes in the area!
-            </p>
+            <p>
+                I'm a software engineer based in New York City. I am interested in{" "}
+                <span className="font-semibold">machine learning</span>,{" "}
+                <span className="font-semibold">full-stack development</span>, and{" "}
+                <span className="font-semibold">system design</span>. I am an upcoming graduate from 
+                RIT with a bachelor's in Software Engineering.
+                <br /><br />
+                Outside of tech, I enjoy golfing, volunteering, and exploring local cat cafes!
+              </p>
     
           </div>
 

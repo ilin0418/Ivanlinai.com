@@ -33,7 +33,7 @@ export default function Experience() {
               GTRI
             </a>
           </p>
-          <p className="text-mygray">summer 2025 - python, c++, c#, .NET </p>
+          <p className="text-mygray">summer 2025 - python, c++, c#, .net </p>
           <br />
 
           <p>
