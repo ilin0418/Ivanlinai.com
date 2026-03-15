@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <ul
-      className="flex flex-row flex-wrap justify-end gap-x-4 gap-y-1 sm:flex-col sm:items-end sm:gap-1"
+      className="flex flex-col items-end gap-2 sm:gap-1"
       onMouseLeave={() => setHovered(undefined)}
     >
       <li
